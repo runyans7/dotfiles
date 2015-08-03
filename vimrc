@@ -3,7 +3,7 @@
 set nocompatible
    
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim/
+set rtp+=~/Dropbox/Developer/dotfiles/vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Let Vundle manage Vundle
@@ -30,6 +30,7 @@ Plugin 'vim-scripts/ctags.vim'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/tComment'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Solarized'
 
 call vundle#end()
 filetype plugin indent on
@@ -106,10 +107,7 @@ if executable('ag')
 endif
 
 " Color scheme
-set t_Co=256
-colorscheme smyck
-highlight NonText guibg=#060606
-highlight Folded  guibg=#0A0A0A guifg=#9090D0
+colorscheme jellybeans
 
 " Make it obvious where 80 characters is
 set textwidth=80
@@ -169,6 +167,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+
+" Remap escape
+:imap  jj <Esc>
 
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1
