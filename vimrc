@@ -31,6 +31,8 @@ Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/tComment'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Solarized'
+Plugin 'AutoClose'
+Plugin 'mattn/emmet-vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -170,6 +172,9 @@ nnoremap <C-l> <C-w>l
 
 " Remap escape
 :imap  jj <Esc>
+
+" Emmet mapping
+let g:user_emmet_leader_key=','
 
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1
